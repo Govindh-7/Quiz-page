@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>QUIZ</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div id="landingPage">
+        <h1>Ready to Quiz? Let's See What You've Got!</h1>
+        <button onclick="startQuiz()">Start</button>
+    </div>
+    
+    <div id="questionCount" style="display:none;">Question <span id="currentQuestion">1</span> of <span id="totalQuestions">3</span></div>
+    
+    <div id="questions" style="display:none;">
+        <div id="question1">
+            <p>What is SQL?</p>
+            <div class="radio-options">
+                <label>
+                    <input type="radio" id="q1_option1" name="a" value="Structured Query Language">
+                   Structured Query Language
+                </label><br>
+                <label>
+                    <input type="radio" id="q1_option2" name="a" value="tool">
+                    Tool
+                </label><br>
+                <label>
+                    <input type="radio" id="q1_option3" name="a" value="code">
+                    Code
+                </label><br>
+                <label>
+                    <input type="radio" id="q1_option4" name="a" value="none">
+                    None
+                </label><br>
+            </div>
+            <button onclick="nextQuestion(1)">Next Question</button>
+        </div>
+
+        <div id="question2" style="display:none;">
+            <p>What is JavaScript?</p>
+            <div class="radio-options">
+                <label>
+                    <input type="radio" id="q2_option1" name="b" value="scripting language">
+                    JavaScript is a scripting language used to make the website interactive
+                </label><br>
+                <label>
+                    <input type="radio" id="q2_option2" name="b" value="assembly language">
+                    JavaScript is an assembly language used to make the website interactive
+                </label><br>
+                <label>
+                    <input type="radio" id="q2_option3" name="b" value="compiled language">
+                    JavaScript is a compiled language used to make the website interactive
+                </label><br>
+                <label>
+                    <input type="radio" id="q2_option4" name="b" value="none">
+                    None
+                </label><br>
+            </div>
+            <button onclick="nextQuestion(2)">Next Question</button>
+        </div>
+
+        <div id="question3" style="display:none;">
+            <p>What is HTML?</p>
+            <div class="radio-options">
+                <label>
+                    <input type="radio" id="q3_option1" name="c" value="markup language">
+                    HTML is a markup language for creating webpages
+                </label><br>
+                <label>
+                    <input type="radio" id="q3_option2" name="c" value="programming language">
+                    HTML is a programming language
+                </label><br>
+                <label>
+                    <input type="radio" id="q3_option3" name="c" value="database language">
+                    HTML is a database language
+                </label><br>
+                <label>
+                    <input type="radio" id="q3_option4" name="c" value="none">
+                    None
+                </label><br>
+            </div>
+            <button onclick="submitQuiz()">Submit Quiz</button>
+        </div>
+    </div>
+
+   
+       
+    </div>
+<div id="results" style="display: none;">
+    <h2>Results</h2>
+    <div id="resultsContent"></div>
+    <button onclick="restartQuiz()">Restart Quiz</button>
+</div>
+
+</div>
+
+<script src="scriptfile.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+
+body{
+   
+   background-color: #e0bedb;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.radio-options label:hover {
+    background-color: #f0f8ff; /* Light blue background on hover */
+    color: #007bff; /* Change text color on hover */
+}
+
+.radio-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.label:hover
+{
+	color:blue;
+}
+
+.radio-options label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.radio-options label input[type="radio"] {
+    margin-right: 50px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+       background-color: #d5ddff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+/* Landing Page */
+#landingPage h1 {
+    font-size: 2rem;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+
+
+/* Questions Section */
+#questions {
+    margin-top: 20px;
+}
+
+.question-block {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+label {
+    font-size: 1rem;
+    margin-left: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Submit Button */
+#questions button {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Results Section */
+#results {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    background-color: #e9f5ff;
+    display: none;
+}
+
+#results h2 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+#results p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
